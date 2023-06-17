@@ -1,0 +1,6 @@
+Amigo, en la carpeta css encpntraras 4 archivos, 
+-styles_old.css es el que te habia enviado como styles la semana pasada, casi copia y pega ijiji
+-styles.css es el que arme a puro codigo css primero para conformar la vista sin usar less
+-style.css es el que genero el .less tal como me pediste:
+ *uso de color, fonts, nesting, bem, less
+ Obviamente no esta como lo tienes en tu vista pero lo ire mejorando.
