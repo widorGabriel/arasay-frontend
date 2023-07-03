@@ -4,3 +4,9 @@ Amigo, en la carpeta css encpntraras 4 archivos,
 -style.css es el que genero el .less tal como me pediste:
  *uso de color, fonts, nesting, bem, less
  Obviamente no esta como lo tienes en tu vista pero lo ire mejorando.
+
+
+ //03-07-2023
+-Hola amigo, en la linea 82 de mi antiguo main.less si habia usado el font-family importado en el google-fonts.less
+-Tenias razon de sobra con el uso incorrecto de convencion bem, espero que ahora si este correcto el nesting con bem.
+Espero tu feed, buena semana amigo.

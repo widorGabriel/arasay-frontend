@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap);
-a:-webkit-any-link {
+a :-webkit-any-link {
   cursor: pointer;
   background: transparent;
 }
-a:link,
-a:visited,
-a:active {
+a :link,
+a :visited,
+a :active {
   text-decoration: none;
   color: darkgray;
 }
@@ -16,29 +16,29 @@ a:active {
   width: 350px;
   border-radius: 2px;
 }
-.card-img {
+.card .card__img {
   width: 350px;
   height: 100%;
 }
-.card-info-text {
+.card .card__info-text {
   color: darkgray;
 }
-.card-price {
+.card .card__price {
   color: #00a1dd;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
 }
-.card-peb {
+.card .card__peb {
   position: absolute;
   top: 15px;
   left: 5px;
 }
-.card-peb > img {
+.card .card__peb > img {
   width: 80px;
   height: 20px;
 }
-.card-status {
+.card .card__status {
   position: absolute;
   top: 15px;
   right: 10px;
@@ -46,7 +46,7 @@ a:active {
   color: #fff;
   background-color: #009DAA;
 }
-.card-details {
+.card .card__details {
   position: absolute;
   margin: 10px;
   bottom: 5px;
@@ -54,62 +54,62 @@ a:active {
   height: 20%;
   z-index: 9;
 }
-.card-detail-location {
+.card .card__detail-location {
   position: relative;
   bottom: -30px;
   left: 0px;
   z-index: 10;
   color: #fff;
 }
-.card-detail-media {
+.card .card__detail-media {
   position: relative;
   bottom: -15px;
   right: -295px;
   z-index: 10;
   color: #fff;
 }
-.card-head {
+.card .card__head {
   height: 50%;
   position: relative;
   background-color: #fff;
 }
-.card-body {
+.card .card__body {
   height: 40%;
   background-color: #fff;
   margin-left: 5%;
   margin-bottom: 7%;
 }
-.card-body > h2 {
+.card .card__body > h2 {
   color: darkgray;
   font-family: 'Open Sans';
 }
-.card-footer {
+.card .card__footer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.card-extra-details {
+.card .card__extra-inmo-logo {
+  position: relative;
+  margin: 5px 5px;
+  left: 10px;
+}
+.card .card__extra-details {
   display: flex;
   align-items: end;
   height: 20px;
   margin-left: 82px;
 }
-.card-extra-details-info {
+.card .card__extra-details-info {
   display: flex;
   align-items: flex-end;
   height: 20px;
   padding-right: 10px;
 }
-.card-extra-svg {
+.card .card__extra-svg {
   height: -webkit-fill-available;
   padding-right: 5px;
 }
-.card-extra-inmo-logo {
-  position: relative;
-  margin: 5px 5px;
-  left: 10px;
-}
-.card-extra-inmo-logo img {
+.card .card__extra-inmo-logo > img {
   height: 40px;
 }
 
