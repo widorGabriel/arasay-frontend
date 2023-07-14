@@ -330,7 +330,8 @@ p {
   max-width: 150px;
 }
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px 5%;
 }
 .autosize {
@@ -380,7 +381,7 @@ p {
   position: absolute;
   margin: 0 0 5% 2%;
   bottom: 5px;
-  width: 80%;
+  width: 100%;
   height: 20%;
   z-index: 9;
 }
@@ -392,11 +393,16 @@ p {
   color: #fff;
 }
 .card .card__detail-media {
-  position: relative;
+  position: absolute;
+  display: inline-flex;
   bottom: -15px;
-  left: 108% ;
+  right: 8% ;
   z-index: 10;
   color: #fff;
+}
+.card .card__detail-media > span {
+  display: inline-flex;
+  gap: 5%;
 }
 .card .card__head {
   height: 50%;
@@ -433,6 +439,11 @@ p {
   align-items: flex-end;
   height: 20px;
   padding-right: 10px;
+}
+.card .card__extra-details-info > p {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 0 0 0;
 }
 .card .card__extra-svg {
   height: -webkit-fill-available;
