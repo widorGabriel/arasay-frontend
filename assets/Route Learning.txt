@@ -10,3 +10,104 @@ Amigo, en la carpeta css encpntraras 4 archivos,
 -Hola amigo, en la linea 82 de mi antiguo main.less si habia usado el font-family importado en el google-fonts.less
 -Tenias razon de sobra con el uso incorrecto de convencion bem, espero que ahora si este correcto el nesting con bem.
 Espero tu feed, buena semana amigo.
+
+//13-07-2023
+-usar rem o em en lugar de pixeles para los tamanos responsivos
+
+-Todo diseno que empieza se comienza con el, significa que (el objeto mide ancho+padding, 
+sin embargo esto hace que el ancho y el padding no se sumen, sino que se adapta dentro del ancho el padding)
+al * se le conoce en css como selector universal, es para aplicarlo a todos los elementos y clases
+
+-El normalize es una buena practica (https://byby.dev/normalize-css) es para normalizar lo parametros y valores 
+por defecto para obtener y que luzcan identicos en todos los navegadores (es como resetaer valores por defecto, buscar reset css).
+
+-Comentar siempre donde comienza y termina tus secciones, ejemplo
+
+-en grid tambien se puede usar grid-template-rows que vendrian siendo las filas, sino se especifica las tomas segun se agreguen
+-gap es los espacios entre columnas y filas, el primero es entre las filas y el segundo entre las columnas
+- se pueden hacer mas dinamicas las posiciones de las columnas
+-usar mediaqueries para el responsivo.
+-Para que todas las reglas de flex funcionen deben tener display:flex en el elemento padre o contenedor, por eso las reglas flex en los hijos que puse no me sirven (flex-direction:column)
+
+-independientemente que el card mida una anchura se pide que se use medidas porcentuales(hacerlos mas flexibles marenes y anchos)
+-al contenedor de los cards ponerle el grid properties.
+-luego adaptarlos a tablets o phone, el usa un solo media query y es max-width
+-en los elementos p{ width: 25%
+max-width: 150px;}
+anchura dinamica es height:auto, max-height, max-width para que no se pixele a las imagenes se les pone display:block porque 
+-https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+//TAG SELECTORS
+    *{
+       box-sizing: border-box; 
+    }
+    body{
+        margin:0;
+        padding:0;
+    }
+    
+    a{
+        :-webkit-any-link{
+            cursor: pointer;
+            background: transparent;
+        }
+        :link,
+        :visited,
+        :active {
+            text-decoration:none;
+            color: @test_darkgray;
+        }
+    }
+    //CONTAINERS SELECTORS
+    .autosize {
+        max-width: 1920px;
+        margin: auto;
+    }
+    .min-autosize{
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .estates {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;//grid-template-columns: auto auto auto(parecido pero no igual, auto es variable dependiendo de los elementos de la columna, la referencia es el objeto en si, en 1fr la referencia es el espacio total disponible)
+        gap: 50px 5%;
+    }
+
+
+
+
+
+    <body>
+    <!-- HEADER -->
+    <header>Header</header>
+    
+    <!-- MAIN MENU -->
+    <nav>Nav</nav>
+
+    <!-- ESTATES -->
+    <section class="estates min-autosize">
+        <?php for($i=0; $i<=9; $i++) { ?>
+        <section class="card">
+            <div class="card__head">
+                <span class="card__peb">
+                    <img src="https://www.immoks.be/wp-content/themes/immoks/assets/img/peb/peb_d.png" alt="D">
+                </span>
+                <span>
+                    <im
+
+
+
+width: 25%
+max-width: 150px;
+height: auto
+//Gabriel Calvo09:45
+display: block
+
+
+DONE 14/07/2023
+1-Aplicar normalize usando .less a los estilos
+2-Tenias razon, aplicando correctamente el display:flex en el padre
+obtenia el efecto del flex-column en el card, incluso pude quitar las lineas
+de la 45-48 y se mantuvo el diseno. Muy buen tip
+3-
