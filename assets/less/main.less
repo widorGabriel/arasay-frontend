@@ -34,7 +34,25 @@
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px 5%;
+        gap: 50px 5%; 
+
+        //Media Queries
+        //Movil
+        @media (max-width: 767px) {
+
+            & {
+                grid-template-columns: 1fr;
+            
+            }
+        }
+        //Tablet
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            & {
+                grid-template-columns: 1fr 1fr;
+            
+            }
+        }
     }
 
     .autosize{
@@ -158,3 +176,6 @@
             }
         }
     }
+
+    
+    

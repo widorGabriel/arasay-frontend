@@ -334,6 +334,16 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px 5%;
 }
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .autosize {
   max-width: 1920px;
   margin: auto;
