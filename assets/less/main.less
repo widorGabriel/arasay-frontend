@@ -30,6 +30,10 @@
         max-width: 150px;
     }
 
+    nav,header{
+        margin:0 0 0 0.5%;
+    }
+
     //CLASSES SELECTORS
     .container{
         display: grid;
@@ -65,8 +69,34 @@
         margin: auto;
     }
 
+    .btn {
+        display: block;
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        font-family: 'Open Sans';
+        background-color: #009DAA;
+        cursor: pointer;
+        z-index: 999;
+        border-radius: 5px;
+        text-align: center;
+        max-width: 200px;
+        margin-bottom: 5px;
+    }
+
+    .content_wrapper{
+        > p{
+            width:90%;
+            max-width:100%;
+        }
+    }
+
     .card{
         flex-direction: column;
+        margin: 2%;
         .card__img{
             width: 100%;
             height: 100%;
@@ -102,7 +132,7 @@
         .card__details{
             position: absolute;
             margin: 0 0 5% 2%;
-            bottom: 5px;
+            bottom: -35px;
             width: 100%;
             height: 20%;
             z-index: 9;
@@ -117,7 +147,7 @@
         .card__detail-media{
             position: absolute;
             display:inline-flex;
-            bottom: -15px;
+            bottom: -5px;
             right:8% ;
             z-index: 10;
             color: #fff;
@@ -134,7 +164,7 @@
         .card__body{
             height:40%;
             background-color: #fff;
-            margin-left: 2%;
+            margin: 3% 0 0 2%;
             > h2{
                 color: @test_darkgray;
                 font-family:'Open Sans';
