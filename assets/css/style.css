@@ -305,189 +305,6 @@ template {
 [hidden] {
   display: none;
 }
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-section {
-  display: flex;
-}
-a :-webkit-any-link {
-  cursor: pointer;
-  background: transparent;
-}
-a :link,
-a :visited,
-a :active {
-  text-decoration: none;
-  color: darkgray;
-}
-p {
-  width: 25%;
-  max-width: 150px;
-}
-nav,
-header {
-  margin: 0 0 0 0.5%;
-}
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px 5%;
-}
-@media (max-width: 767px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.autosize {
-  max-width: 1920px;
-  margin: auto;
-}
-.min-autosize {
-  max-width: 1300px;
-  margin: auto;
-}
-.btn {
-  display: block;
-  padding: 0 20px;
-  height: 40px;
-  line-height: 40px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  font-family: 'Open Sans';
-  background-color: #009DAA;
-  cursor: pointer;
-  z-index: 999;
-  border-radius: 5px;
-  text-align: center;
-  max-width: 200px;
-  margin-bottom: 5px;
-}
-.content_wrapper > p {
-  width: 90%;
-  max-width: 100%;
-}
-.card {
-  flex-direction: column;
-  margin: 2%;
-}
-.card .card__img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.card .card__info-text {
-  color: darkgray;
-}
-.card .card__price {
-  color: #00a1dd;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 30px;
-}
-.card .card__peb {
-  position: absolute;
-  top: 15px;
-  left: 5px;
-}
-.card .card__peb > img {
-  width: 100%;
-  height: 20px;
-  display: block;
-}
-.card .card__status {
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  padding: 5px;
-  color: #fff;
-  background-color: #009DAA;
-}
-.card .card__details {
-  position: absolute;
-  margin: 0 0 5% 2%;
-  bottom: -35px;
-  width: 100%;
-  height: 20%;
-  z-index: 9;
-}
-.card .card__detail-location {
-  position: relative;
-  bottom: -30px;
-  left: 0px;
-  z-index: 10;
-  color: #fff;
-}
-.card .card__detail-media {
-  position: absolute;
-  display: inline-flex;
-  bottom: -5px;
-  right: 8% ;
-  z-index: 10;
-  color: #fff;
-}
-.card .card__detail-media > span {
-  display: inline-flex;
-  gap: 5%;
-}
-.card .card__head {
-  height: 50%;
-  position: relative;
-  background-color: #fff;
-}
-.card .card__body {
-  height: 40%;
-  background-color: #fff;
-  margin: 3% 0 0 2%;
-}
-.card .card__body > h2 {
-  color: darkgray;
-  font-family: 'Open Sans';
-}
-.card .card__footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.card .card__extra-inmo-logo {
-  position: relative;
-  margin: 5px 5px;
-  left: 10px;
-}
-.card .card__extra-details {
-  display: flex;
-  align-items: end;
-  height: 20px;
-  margin-left: 82px;
-}
-.card .card__extra-details-info {
-  display: flex;
-  align-items: flex-end;
-  height: 20px;
-  padding-right: 10px;
-}
-.card .card__extra-details-info > p {
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0 0 0 0;
-}
-.card .card__extra-svg {
-  height: -webkit-fill-available;
-  padding-right: 5px;
-}
-.card .card__extra-inmo-logo > img {
-  height: 40px;
-}
 .clear {
   display: block;
   clear: both;
@@ -892,5 +709,202 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  display: flex;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+  background: transparent;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: darkgray;
+}
+p {
+  width: 25%;
+  max-width: 150px;
+}
+nav,
+header {
+  margin: 0 0 0 0.5%;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  gap: 50px 0;
+}
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.autosize {
+  max-width: 1920px;
+  margin: auto;
+}
+.min-autosize {
+  max-width: 1300px;
+  margin: auto;
+}
+.btn {
+  display: block;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  background-color: #009DAA;
+  cursor: pointer;
+  z-index: 999;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 200px;
+  margin-bottom: 5px;
+}
+.content_wrapper > p {
+  width: 90%;
+  max-width: 100%;
+}
+.card {
+  flex-direction: column;
+  margin: 5%;
+  /* .card__detail-location{
+            position: relative;
+            bottom: -30px;
+            left:0px;
+            z-index: 10;
+            color: #fff;
+        } */
+  /* .card__detail-media{
+            position: absolute;
+            display:inline-flex;
+            bottom: -5px;
+            right:8% ;
+            z-index: 10;
+            color: #fff;
+            > span{
+                display:inline-flex;
+                gap:5%;
+            }
+        } */
+  /*  .card__extra-inmo-logo{
+        position: relative;
+        margin: 5px;
+        left: 10px;
+        } */
+}
+.card .card__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.card .card__info-text {
+  color: darkgray;
+}
+.card .card__price {
+  color: #00a1dd;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+.card .card__peb {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  z-index: 10;
+  max-width: 75px;
+}
+.card .card__peb > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card .card__status {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  padding: 5px;
+  color: #fff;
+  background-color: #009DAA;
+}
+.card .card__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  padding: 10px;
+  color: #fff;
+}
+.card .card__head {
+  height: auto;
+  position: relative;
+  background-color: #fff;
+}
+.card .card__body {
+  padding: 10px;
+  height: auto;
+  background-color: #eee;
+  margin: 0;
+}
+.card .card__body > h2 {
+  color: darkgray;
+  font-family: 'Open Sans';
+}
+.card .card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  background: #eee;
+  padding: 10px;
+}
+.card .card__extra-details {
+  display: flex;
+  align-items: end;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .card .card__extra-details {
+    font-size: 12px;
+  }
+}
+.card .card__extra-details-info {
+  display: flex;
+  align-items: flex-end;
+  height: 20px;
+  padding-right: 10px;
+}
+.card .card__extra-details-info > p {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 0 0 0;
+}
+.card .card__extra-svg {
+  height: -webkit-fill-available;
+  padding-right: 5px;
+}
+.card .card__extra-inmo-logo > img {
+  height: 40px;
 }
 

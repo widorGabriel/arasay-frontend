@@ -13,13 +13,13 @@
     }
 
     a{
-        :-webkit-any-link{
+        &:-webkit-any-link{
             cursor: pointer;
             background: transparent;
         }
-        :link,
-        :visited,
-        :active {
+        &:link,
+        &:visited,
+        &:active {
             text-decoration:none;
             color: @test_darkgray;
         }
@@ -37,8 +37,8 @@
     //CLASSES SELECTORS
     .container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px 5%; 
+        grid-template-columns: repeat(3, 33.33%);
+        gap: 50px 0;
 
         //Media Queries
         //Movil
@@ -96,7 +96,7 @@
 
     .card{
         flex-direction: column;
-        margin: 2%;
+        margin: 5%;
         .card__img{
             width: 100%;
             height: 100%;
@@ -115,9 +115,11 @@
             position: absolute;
             top: 15px;
             left: 5px;
+            z-index: 10;
+            max-width: 75px;
             > img{
                 width: 100%;
-                height: 20px;
+                height: auto;
                 display: block;
                 }
         }
@@ -131,20 +133,27 @@
         }
         .card__details{
             position: absolute;
-            margin: 0 0 5% 2%;
-            bottom: -35px;
+            bottom: 0;
+            left: 0;
+           
+            display: flex;
+            justify-content: space-between;
+
             width: 100%;
-            height: 20%;
-            z-index: 9;
+            height: auto;
+            z-index: 10;
+
+            padding: 10px;
+            color: #fff;
         }
-        .card__detail-location{
+        /* .card__detail-location{
             position: relative;
             bottom: -30px;
             left:0px;
             z-index: 10;
             color: #fff;
-        }
-        .card__detail-media{
+        } */
+        /* .card__detail-media{
             position: absolute;
             display:inline-flex;
             bottom: -5px;
@@ -155,16 +164,17 @@
                 display:inline-flex;
                 gap:5%;
             }
-        }
+        } */
         .card__head{
-            height:50%;
+            height:auto;
             position: relative;
             background-color: #fff;
         }
         .card__body{
-            height:40%;
-            background-color: #fff;
-            margin: 3% 0 0 2%;
+            padding: 10px;
+            height: auto;
+            background-color: #eee;
+            margin: 0;
             > h2{
                 color: @test_darkgray;
                 font-family:'Open Sans';
@@ -174,17 +184,22 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            border-top: 1px solid #fff;
+            background: #eee;
+            padding: 10px;
         }
-        .card__extra-inmo-logo{
+       /*  .card__extra-inmo-logo{
         position: relative;
-        margin: 5px 5px;
+        margin: 5px;
         left: 10px;
-        }
+        } */
         .card__extra-details{
         display: flex;
         align-items: end;
-        height: 20px;
-        margin-left: 82px;
+        height: auto;
+        @media screen and (max-width: 600px) {
+            font-size: 12px;
+        }
         }
         .card__extra-details-info{
         display: flex;
