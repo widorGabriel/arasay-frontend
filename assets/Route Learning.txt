@@ -111,3 +111,11 @@ DONE 14/07/2023
 obtenia el efecto del flex-column en el card, incluso pude quitar las lineas
 de la 45-48 y se mantuvo el diseno. Muy buen tip
 3-
+
+
+4142
+
+27/07/2023:
+Hoy estare trabajando integrando swagger en corporations resource (show/update/delete)
+Trabajo en un bug de un endpoint ujnto con Sergio en la api2dev stagging
+Comenzare la optimizacion del listado de estates
